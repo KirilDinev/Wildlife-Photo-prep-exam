@@ -1,0 +1,27 @@
+{
+  "name": "wildlife-photography-examprep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KirilDinev/Wildlife-Photo-prep-exam.git"
+  },
+  "keywords": [],
+  "author": "KD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KirilDinev/Wildlife-Photo-prep-exam/issues"
+  },
+  "homepage": "https://github.com/KirilDinev/Wildlife-Photo-prep-exam#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.2.2"
+  }
+}
