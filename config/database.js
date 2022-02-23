@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
+require('../models/User.js');
 
 const dbName = 'wildlife';
-const connctionString = `mongoDB://localhost:27017/${dbName}`;
+const connectionString = `mongodb://localhost:27017/${dbName}`;
 
 module.exports = async (app) => {
     try {
-        await mongoose.connctionString(connctionString, {
+        await mongoose.connect(connectionString, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
@@ -16,7 +17,7 @@ module.exports = async (app) => {
             console.error(err);
         });
     } catch (err) {
-        console.error('Error connection to database');
+        console.error('Error connecting to database');
         process.exit(1);
     }
-}
+};

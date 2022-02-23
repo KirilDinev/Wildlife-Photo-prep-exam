@@ -1,6 +1,7 @@
 const express = require('express');
 const { create: handlebars } = require('express-handlebars');
 const session = require('express-session');
+const userSession = require('../middleware/userSession.js');
 
 
 
@@ -19,4 +20,5 @@ module.exports = (app) => {
         cookie: { secure: 'auto' }
     }))
     app.use(express.urlencoded({ extended: true }));
+    app.use(userSession());
 }
